@@ -12,8 +12,28 @@ final public class RatingView: UIView {
     public enum RatingType {
         case user(config: RatingConfig)
         case rated(_ rating: CGFloat, config: RatingConfig)
+        
+        static public func == (lhs: RatingType, rhs: RatingType) -> Bool {
+            switch lhs {
+            case .user(let lhsConfig):
+                switch rhs {
+                case .user(let rhsConfig):
+                    return lhsConfig == rhsConfig
+                case .rated:
+                    break
+                }
+            case .rated(let lhsRating, let lhsConfig):
+                switch rhs {
+                case .user:
+                    break
+                case .rated(let rhsRating, let rhsConfig):
+                    return lhsRating == rhsRating && lhsConfig == rhsConfig
+                }
+            }
+            return false
+        }
     }
-
+    
     /// Dependency for rating view
     /// - Parameters:
     ///     - type: Determines if rating is already known or user input is required
@@ -196,6 +216,7 @@ private extension RatingView {
 extension RatingView {
     
     override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard properties.type == .user(config: ratingConfig) else { return }
         guard !hasUserRated else { return }
         let touchLocation: CGPoint = touches.first?.location(in: stackView) ?? .init()
         let selectedRating: CGFloat = touchLocation.x / stackView.bounds.width * CGFloat(style.numberOfStars)

@@ -19,11 +19,11 @@ class ViewController: UIViewController {
         // FYI: Experiment with these values
         let types: [RatingView.RatingType] = [
             .rated(1, config: (animated: true, duration: 0.3)),
-            .rated(2, config: (animated: false, duration: 0.3)),
+            .rated(2, config: (animated: true, duration: 0.3)),
             .rated(3, config: (animated: true, duration: 0.3)),
             .rated(4, config: (animated: true, duration: 0.3)),
-            .rated(5, config: (animated: true, duration: 0.3)),
-            .rated(6, config: (animated: false, duration: 0.3))
+            .rated(6, config: (animated: true, duration: 0.3)),
+            .user(config: (animated: false, duration: 0))
         ]
         let colors: [UIColor] = [.systemRed, .systemBlue, .systemPurple, .systemYellow, .systemTeal, .systemOrange]
         let spacings: [CGFloat] = [2, 2, 2, 2, 2, 2]
