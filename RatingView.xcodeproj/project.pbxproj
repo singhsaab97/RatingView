@@ -10,6 +10,8 @@
 		DE595136256D90690063749C /* RatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE59512C256D90690063749C /* RatingView.framework */; };
 		DE59513B256D90690063749C /* RatingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59513A256D90690063749C /* RatingViewTests.swift */; };
 		DE59513D256D90690063749C /* RatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE59512F256D90690063749C /* RatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE59514D256D93900063749C /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59514C256D93900063749C /* RatingView.swift */; };
+		DE595159256D94B90063749C /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE595158256D94B90063749C /* StarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		DE595135256D90690063749C /* RatingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE59513A256D90690063749C /* RatingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewTests.swift; sourceTree = "<group>"; };
 		DE59513C256D90690063749C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE59514C256D93900063749C /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		DE595158256D94B90063749C /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		DE59512E256D90690063749C /* RatingView */ = {
 			isa = PBXGroup;
 			children = (
+				DE595158256D94B90063749C /* StarView.swift */,
+				DE59514C256D93900063749C /* RatingView.swift */,
 				DE59512F256D90690063749C /* RatingView.h */,
 				DE595130256D90690063749C /* Info.plist */,
 			);
@@ -147,6 +153,7 @@
 				TargetAttributes = {
 					DE59512B256D90690063749C = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					DE595134256D90690063749C = {
 						CreatedOnToolsVersion = 12.0;
@@ -194,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE595159256D94B90063749C /* StarView.swift in Sources */,
+				DE59514D256D93900063749C /* RatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +350,7 @@
 		DE595141256D90690063749C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XR8TS36N9S;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Kasthetics.RatingView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +376,7 @@
 		DE595142256D90690063749C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XR8TS36N9S;
@@ -389,6 +401,7 @@
 		DE595144256D90690063749C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XR8TS36N9S;
 				INFOPLIST_FILE = RatingViewTests/Info.plist;
@@ -407,6 +420,7 @@
 		DE595145256D90690063749C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XR8TS36N9S;
 				INFOPLIST_FILE = RatingViewTests/Info.plist;
