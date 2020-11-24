@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE595136256D90690063749C /* RatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE59512C256D90690063749C /* RatingView.framework */; };
 		DE59513B256D90690063749C /* RatingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59513A256D90690063749C /* RatingViewTests.swift */; };
 		DE59513D256D90690063749C /* RatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE59512F256D90690063749C /* RatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE59514D256D93900063749C /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59514C256D93900063749C /* RatingView.swift */; };
 		DE595159256D94B90063749C /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE595158256D94B90063749C /* StarView.swift */; };
+		DE5951AA256D980E0063749C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5951A9256D980E0063749C /* AppDelegate.swift */; };
+		DE5951AC256D980E0063749C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5951AB256D980E0063749C /* SceneDelegate.swift */; };
+		DE5951AE256D980E0063749C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5951AD256D980E0063749C /* ViewController.swift */; };
+		DE5951B1256D980E0063749C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5951AF256D980E0063749C /* Main.storyboard */; };
+		DE5951B3256D98100063749C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5951B2256D98100063749C /* Assets.xcassets */; };
+		DE5951B6256D98100063749C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5951B4256D98100063749C /* LaunchScreen.storyboard */; };
+		DE5951C6256D98D60063749C /* RatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE59512C256D90690063749C /* RatingView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,14 @@
 		DE59513C256D90690063749C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE59514C256D93900063749C /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		DE595158256D94B90063749C /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		DE5951A7256D980E0063749C /* RatingViewExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingViewExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5951A9256D980E0063749C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE5951AB256D980E0063749C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE5951AD256D980E0063749C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE5951B0256D980E0063749C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE5951B2256D98100063749C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE5951B5256D98100063749C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE5951B7256D98100063749C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +61,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE595136256D90690063749C /* RatingView.framework in Frameworks */,
+				DE5951C6256D98D60063749C /* RatingView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5951A4256D980E0063749C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +80,7 @@
 			children = (
 				DE59512E256D90690063749C /* RatingView */,
 				DE595139256D90690063749C /* RatingViewTests */,
+				DE5951A8256D980E0063749C /* RatingViewExamples */,
 				DE59512D256D90690063749C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +90,7 @@
 			children = (
 				DE59512C256D90690063749C /* RatingView.framework */,
 				DE595135256D90690063749C /* RatingViewTests.xctest */,
+				DE5951A7256D980E0063749C /* RatingViewExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +113,20 @@
 				DE59513C256D90690063749C /* Info.plist */,
 			);
 			path = RatingViewTests;
+			sourceTree = "<group>";
+		};
+		DE5951A8256D980E0063749C /* RatingViewExamples */ = {
+			isa = PBXGroup;
+			children = (
+				DE5951A9256D980E0063749C /* AppDelegate.swift */,
+				DE5951AB256D980E0063749C /* SceneDelegate.swift */,
+				DE5951AD256D980E0063749C /* ViewController.swift */,
+				DE5951AF256D980E0063749C /* Main.storyboard */,
+				DE5951B2256D98100063749C /* Assets.xcassets */,
+				DE5951B4256D98100063749C /* LaunchScreen.storyboard */,
+				DE5951B7256D98100063749C /* Info.plist */,
+			);
+			path = RatingViewExamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +179,23 @@
 			productReference = DE595135256D90690063749C /* RatingViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DE5951A6256D980E0063749C /* RatingViewExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5951BA256D98100063749C /* Build configuration list for PBXNativeTarget "RatingViewExamples" */;
+			buildPhases = (
+				DE5951A3256D980E0063749C /* Sources */,
+				DE5951A4256D980E0063749C /* Frameworks */,
+				DE5951A5256D980E0063749C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RatingViewExamples;
+			productName = RatingViewExamples;
+			productReference = DE5951A7256D980E0063749C /* RatingViewExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +210,9 @@
 						LastSwiftMigration = 1200;
 					};
 					DE595134256D90690063749C = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					DE5951A6256D980E0063749C = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -175,6 +232,7 @@
 			targets = (
 				DE59512B256D90690063749C /* RatingView */,
 				DE595134256D90690063749C /* RatingViewTests */,
+				DE5951A6256D980E0063749C /* RatingViewExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +249,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5951A5256D980E0063749C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5951B6256D98100063749C /* LaunchScreen.storyboard in Resources */,
+				DE5951B3256D98100063749C /* Assets.xcassets in Resources */,
+				DE5951B1256D980E0063749C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +282,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE5951A3256D980E0063749C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5951AE256D980E0063749C /* ViewController.swift in Sources */,
+				DE5951AA256D980E0063749C /* AppDelegate.swift in Sources */,
+				DE5951AC256D980E0063749C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -223,6 +301,25 @@
 			targetProxy = DE595137256D90690063749C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE5951AF256D980E0063749C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5951B0256D980E0063749C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5951B4256D98100063749C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5951B5256D98100063749C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DE59513E256D90690063749C /* Debug */ = {
@@ -436,6 +533,46 @@
 			};
 			name = Release;
 		};
+		DE5951B8256D98100063749C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XR8TS36N9S;
+				INFOPLIST_FILE = RatingViewExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kasthetics.RatingViewExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE5951B9256D98100063749C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XR8TS36N9S;
+				INFOPLIST_FILE = RatingViewExamples/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Kasthetics.RatingViewExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -462,6 +599,15 @@
 			buildConfigurations = (
 				DE595144256D90690063749C /* Debug */,
 				DE595145256D90690063749C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5951BA256D98100063749C /* Build configuration list for PBXNativeTarget "RatingViewExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5951B8256D98100063749C /* Debug */,
+				DE5951B9256D98100063749C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
