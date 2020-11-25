@@ -43,5 +43,7 @@ ratingView.heightAnchor.constraint(equalToConstant: ratingView.optimalSize.heigh
 ```
 That's it!:partying_face:It is **recommended** to use **optimalSize** property to set proper constraints for the rating view, however, it'll also work fine if you set a custom width and height.:wink:
 
+>Pass a listener in the initializer of your rating view by conforming the parent class to `RatingViewListener` to receive user rating events.
+
 ### Show some appreciation
 Hey if you like this project and consider using it in your app, I'd like if you give it a star and show some love.:star::heavy_heart_exclamation:
