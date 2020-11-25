@@ -18,6 +18,9 @@
 		DE5951B3256D98100063749C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5951B2256D98100063749C /* Assets.xcassets */; };
 		DE5951B6256D98100063749C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5951B4256D98100063749C /* LaunchScreen.storyboard */; };
 		DE5951C6256D98D60063749C /* RatingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE59512C256D90690063749C /* RatingView.framework */; };
+		DE5951DE256E1AA90063749C /* RatingView2.mov in Resources */ = {isa = PBXBuildFile; fileRef = DE5951DB256E1AA90063749C /* RatingView2.mov */; };
+		DE5951DF256E1AA90063749C /* RatingView3.mov in Resources */ = {isa = PBXBuildFile; fileRef = DE5951DC256E1AA90063749C /* RatingView3.mov */; };
+		DE5951E0256E1AA90063749C /* RatingView1.mov in Resources */ = {isa = PBXBuildFile; fileRef = DE5951DD256E1AA90063749C /* RatingView1.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		DE5951B2256D98100063749C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5951B5256D98100063749C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5951B7256D98100063749C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5951DB256E1AA90063749C /* RatingView2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = RatingView2.mov; sourceTree = "<group>"; };
+		DE5951DC256E1AA90063749C /* RatingView3.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = RatingView3.mov; sourceTree = "<group>"; };
+		DE5951DD256E1AA90063749C /* RatingView1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = RatingView1.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 		DE5951A8256D980E0063749C /* RatingViewExamples */ = {
 			isa = PBXGroup;
 			children = (
+				DE5951DA256E18650063749C /* Videos */,
 				DE5951A9256D980E0063749C /* AppDelegate.swift */,
 				DE5951AB256D980E0063749C /* SceneDelegate.swift */,
 				DE5951AD256D980E0063749C /* ViewController.swift */,
@@ -127,6 +134,16 @@
 				DE5951B7256D98100063749C /* Info.plist */,
 			);
 			path = RatingViewExamples;
+			sourceTree = "<group>";
+		};
+		DE5951DA256E18650063749C /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				DE5951DD256E1AA90063749C /* RatingView1.mov */,
+				DE5951DB256E1AA90063749C /* RatingView2.mov */,
+				DE5951DC256E1AA90063749C /* RatingView3.mov */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +274,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5951B6256D98100063749C /* LaunchScreen.storyboard in Resources */,
+				DE5951DE256E1AA90063749C /* RatingView2.mov in Resources */,
+				DE5951DF256E1AA90063749C /* RatingView3.mov in Resources */,
 				DE5951B3256D98100063749C /* Assets.xcassets in Resources */,
+				DE5951E0256E1AA90063749C /* RatingView1.mov in Resources */,
 				DE5951B1256D980E0063749C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
