@@ -42,7 +42,10 @@ class ViewController: UIViewController {
                     radius: radii[index]
                 )
             )
-            let ratingView: RatingView = .init(properties: properties)
+            let ratingView: RatingView = .init(
+                properties: properties,
+                listener: self
+            )
             view.addSubview(ratingView)
             ratingView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
             ratingView.centerYAnchor.constraint(
@@ -54,4 +57,12 @@ class ViewController: UIViewController {
         }
     }
 
+}
+
+extension ViewController: RatingViewListener {
+    
+    func userDidRate(with rating: CGFloat) {
+        print("Selected user rating is \(rating)")
+    }
+    
 }

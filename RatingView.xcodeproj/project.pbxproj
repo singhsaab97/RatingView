@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE509D46256E244800ABA99F /* RatingView3.gif in Resources */ = {isa = PBXBuildFile; fileRef = DE509D45256E244800ABA99F /* RatingView3.gif */; };
 		DE509D4B256E248600ABA99F /* RatingView4.gif in Resources */ = {isa = PBXBuildFile; fileRef = DE509D4A256E248600ABA99F /* RatingView4.gif */; };
+		DE509D50256E289200ABA99F /* RatingViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE509D4F256E289200ABA99F /* RatingViewProtocol.swift */; };
 		DE59513B256D90690063749C /* RatingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59513A256D90690063749C /* RatingViewTests.swift */; };
 		DE59513D256D90690063749C /* RatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DE59512F256D90690063749C /* RatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE59514D256D93900063749C /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59514C256D93900063749C /* RatingView.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		DE509D45256E244800ABA99F /* RatingView3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RatingView3.gif; sourceTree = "<group>"; };
 		DE509D4A256E248600ABA99F /* RatingView4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RatingView4.gif; sourceTree = "<group>"; };
+		DE509D4F256E289200ABA99F /* RatingViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewProtocol.swift; sourceTree = "<group>"; };
 		DE59512C256D90690063749C /* RatingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RatingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE59512F256D90690063749C /* RatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RatingView.h; sourceTree = "<group>"; };
 		DE595130256D90690063749C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		DE59512E256D90690063749C /* RatingView */ = {
 			isa = PBXGroup;
 			children = (
+				DE509D4F256E289200ABA99F /* RatingViewProtocol.swift */,
 				DE595158256D94B90063749C /* StarView.swift */,
 				DE59514C256D93900063749C /* RatingView.swift */,
 				DE59512F256D90690063749C /* RatingView.h */,
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE595159256D94B90063749C /* StarView.swift in Sources */,
+				DE509D50256E289200ABA99F /* RatingViewProtocol.swift in Sources */,
 				DE59514D256D93900063749C /* RatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

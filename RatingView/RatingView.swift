@@ -74,10 +74,13 @@ final public class RatingView: UIView {
     private var didLayoutSubviews: Bool = false
     private var hasUserRated: Bool = false
     
+    private weak var listener: RatingViewListener?
+    
     public typealias RatingConfig = (animated: Bool, duration: TimeInterval)
     
-    public init(properties: Properties) {
+    public init(properties: Properties, listener: RatingViewListener?) {
         self.properties = properties
+        self.listener = listener
         super.init(frame: .init())
         performInitialSetup()
     }
@@ -221,6 +224,7 @@ extension RatingView {
         let touchLocation: CGPoint = touches.first?.location(in: stackView) ?? .init()
         let selectedRating: CGFloat = touchLocation.x / stackView.bounds.width * CGFloat(style.numberOfStars)
         fillStars(with: selectedRating)
+        listener?.userDidRate(with: selectedRating)
         hasUserRated.toggle()
     }
     
