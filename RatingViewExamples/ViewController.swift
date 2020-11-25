@@ -18,16 +18,16 @@ class ViewController: UIViewController {
     private func addRatingViews() {
         // FYI: Experiment with these values
         let types: [RatingView.RatingType] = [
-            .rated(1, config: (animated: true, duration: 0.3)),
-            .rated(2, config: (animated: true, duration: 0.3)),
-            .rated(3, config: (animated: true, duration: 0.3)),
-            .rated(4, config: (animated: true, duration: 0.3)),
-            .rated(6, config: (animated: true, duration: 0.3)),
+            .user(config: (animated: true, duration: 0.3)),
+            .user(config: (animated: false, duration: 0)),
+            .user(config: (animated: true, duration: 0.3)),
+            .user(config: (animated: false, duration: 0)),
+            .user(config: (animated: true, duration: 0.3)),
             .user(config: (animated: false, duration: 0))
         ]
         let colors: [UIColor] = [.systemRed, .systemBlue, .systemPurple, .systemYellow, .systemTeal, .systemOrange]
         let spacings: [CGFloat] = [2, 2, 2, 2, 2, 2]
-        let corners: [Int] = [5, 5, 5, 5, 5, 5]
+        let corners: [Int] = [4, 5, 6, 7, 8, 9]
         let radii: [CGFloat] = [20, 20, 20, 20, 20, 20]
         // Experimentation ends here
         let ratingViewHeight: CGFloat = view.bounds.height / CGFloat(types.count)
